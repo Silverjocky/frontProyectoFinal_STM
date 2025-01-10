@@ -14,9 +14,9 @@ export const routes: Routes = [
     component: DashboardComponent,
     canActivate: [authGuard],
     children: [
-      { path: 'expenses', component: LogComponent },  // <-- Cambio aquí
+      { path: 'suppliers', component: LogComponent },  // 
       { path: 'creditos', component: CreditosComponent },
-      { path: '', redirectTo: 'expenses', pathMatch: 'full' } // <-- Y aquí
+      { path: '', redirectTo: 'suppliers', pathMatch: 'full' } // 
     ]
   },
   { path: '**', redirectTo: '' }
